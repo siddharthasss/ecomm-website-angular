@@ -1,0 +1,21 @@
+.user-auth h1{
+    text-align: center;
+    margin-bottom: 50px;
+    margin-top:80px;
+    color: blueviolet;;
+}
+.user-auth{
+    margin-bottom: 100px;
+}
+.common-form a{
+    color: blueviolet;
+    cursor: pointer;
+}
+.invalid-input{
+    color: red;
+    font-size: 12px;
+    margin-top: -20px;
+}
+button:disabled{
+    cursor: not-allowed;
+}

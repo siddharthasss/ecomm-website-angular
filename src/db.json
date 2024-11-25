@@ -1,0 +1,353 @@
+{
+  "seller": [
+    {
+      "name": "sid d",
+      "email": "sid@elller.com",
+      "password": "qwe@123",
+      "id": "df67"
+    },
+    {
+      "id": "c016",
+      "name": "siddhartha sahoo",
+      "password": "qwert",
+      "email": "siddharthas.sahoo.123@gmail.com"
+    },
+    {
+      "id": "ca91",
+      "name": "siddhartha sahoo",
+      "password": "qwert",
+      "email": "siddharthas.sahoo.123@gmail.com"
+    },
+    {
+      "id": "317e",
+      "name": "cvcv",
+      "password": "qwert",
+      "email": "sid@test.com"
+    },
+    {
+      "id": "d60a",
+      "name": "siddhartha sahoo",
+      "password": "dfd",
+      "email": "siddharthas.sahoo.123@gmail.com"
+    },
+    {
+      "id": "86bb",
+      "name": "sd",
+      "password": "asd",
+      "email": "asd"
+    },
+    {
+      "id": "7d19",
+      "name": "sa",
+      "password": "dsa",
+      "email": "asd"
+    },
+    {
+      "id": "20cd",
+      "name": "sd",
+      "password": "sd",
+      "email": "sds"
+    },
+    {
+      "id": "3047",
+      "name": "fsfd",
+      "password": "sdf",
+      "email": "sfd"
+    },
+    {
+      "id": "d6bd",
+      "name": "ert",
+      "password": "ret",
+      "email": "ert"
+    },
+    {
+      "id": "81fa",
+      "name": "sfs",
+      "password": "dsf",
+      "email": "sdf"
+    },
+    {
+      "id": "0568",
+      "name": "sfd",
+      "password": "dfs",
+      "email": "sf"
+    },
+    {
+      "id": "3e53",
+      "name": "ssid",
+      "password": "sfss",
+      "email": "fssf"
+    },
+    {
+      "name": "sasa",
+      "password": "dasd",
+      "email": "asd",
+      "id": "S73mHR3"
+    },
+    {
+      "name": "qwert",
+      "password": "",
+      "email": "",
+      "id": "svBy6Tm"
+    },
+    {
+      "name": "peter",
+      "password": "qwert",
+      "email": "peter@gmail.com",
+      "id": "riUOsXG"
+    }
+  ],
+  "products": [
+    {
+      "name": "I phone 14",
+      "price": "100000",
+      "color": "black",
+      "category": "mobile",
+      "description": "An Apple Product",
+      "image": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcSOO1JDPUNwcPiqzHYhaL_zpJA0Ymlr6mD9sSgTPad_JYdrk-o",
+      "id": "1"
+    },
+    {
+      "name": "Samsung S23",
+      "price": "25000",
+      "color": "black",
+      "category": "mobile",
+      "description": "a samsung product",
+      "image": "https://rukminim2.flixcart.com/image/850/1000/xif0q/mobile/u/i/d/-original-imagzm8qbwwyyvhf.jpeg?q=90&crop=false",
+      "id": "ad8b"
+    },
+    {
+      "name": "HP laptop",
+      "price": "65000             ",
+      "color": "silver",
+      "category": "Laptop",
+      "description": "HP laptop for students",
+      "image": "https://images-cdn.ubuy.co.in/651c4a2c17002e2bb90fa2cd-hp-15-6-touchscreen-intel-core.jpg",
+      "id": "d7f6"
+    },
+    {
+      "id": "be41",
+      "name": "Nike shoes",
+      "price": "7999",
+      "color": "grey",
+      "category": "shoes",
+      "description": "running shoes for men",
+      "image": "https://static.nike.com/a/images/t_PDP_936_v1/f_auto,q_auto:eco/c78ddcb7-e0eb-4424-90ae-4227f68c5675/NIKE+CORTEZ.png"
+    },
+    {
+      "name": "apple watch",
+      "price": "25000",
+      "color": "black",
+      "category": "smart watch",
+      "description": "apple smart watch",
+      "image": "https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/MT3D3ref_VW_34FR+watch-case-44-aluminum-midnight-cell-se_VW_34FR+watch-face-44-aluminum-midnight-se_VW_34FR?wid=752&hei=720&bgc=fafafa&trim=1&fmt=p-jpg&qlt=80&.v=ajJYOEQxYjNlejNwbWNnSU16d0NYaWhSbVIzRFJTYlp1MEk4OWNDaTcvNTlEbzMrd1Z5SUpEd0hiT0ZLRlZGNHVDTzRRaC84T1VMbXJRN05SRldIelBRWnNWZWtLcTZCYVRER3FsWWowaTk5RG8zK3dWeUlKRHdIYk9GS0ZWRjR4cVNUNDJadDNVSmRncE9SalAvZ24zZmdHMUt6VFlqa3BpV2VBOUNycGdrcDIxSk5peW5HTWQ0c004MmJwMkNtdGl6SHg4ZE5NYmlWSVQ5akRTdGpCZkNDUmN0SlpnYXpQNFNTbUVsbTlnST0=",
+      "id": "5af1"
+    },
+    {
+      "id": "3196",
+      "name": "Playstation 5",
+      "price": "50000",
+      "color": "white",
+      "category": "Gamong console",
+      "description": "Ps5 by sony",
+      "image": "https://hgworld.in/wp-content/uploads/2021/03/ps5-console.jpg"
+    },
+    {
+      "id": "e8b6",
+      "name": "Sony Xm5",
+      "price": "30000",
+      "color": "white",
+      "category": "Headphones",
+      "description": "Sony noise cancelling Headphones",
+      "image": "https://www.jbhifi.com.au/cdn/shop/products/592551-Product-0-I-637878553977254838.jpg?v=1652248220"
+    },
+    {
+      "name": "Samsung NU7100",
+      "price": "40000",
+      "color": "black",
+      "category": "Smart TV",
+      "description": "55 inch smart UHD TV",
+      "image": "https://images.samsung.com/is/image/samsung/in-uhdtv-nu7100-ua55nu7100klxl-185768416?$650_519_PNG$",
+      "id": "7472"
+    }
+  ],
+  "users": [
+    {
+      "name": "fsf",
+      "email": "fsdfsd",
+      "password": "dfsdf",
+      "id": 3
+    },
+    {
+      "name": "peter",
+      "email": "peter@gmail.com",
+      "password": "qwert",
+      "id": 4
+    },
+    {
+      "name": "zcz",
+      "email": "dsfsd",
+      "password": "fdsdf",
+      "id": 5
+    },
+    {
+      "name": "sfs",
+      "email": "sdf",
+      "password": "dsf",
+      "id": 6
+    },
+    {
+      "name": "zvzxv",
+      "email": "zvzx",
+      "password": "zvzx",
+      "id": 7
+    },
+    {
+      "name": "zcz",
+      "email": "cxv",
+      "password": "xvx",
+      "id": 8
+    },
+    {
+      "name": "sfsdf",
+      "email": "sdf",
+      "password": "sdf",
+      "id": 9
+    },
+    {
+      "name": "sfsd",
+      "email": "sdfsd",
+      "password": "sdf",
+      "id": 10
+    },
+    {
+      "name": "dfsd",
+      "email": "sdfsdf",
+      "password": "sdf",
+      "id": 11
+    },
+    {
+      "name": "assaf",
+      "email": "asfasf",
+      "password": "asfas",
+      "id": 12
+    },
+    {
+      "name": "anil",
+      "email": "anil@gmail.com",
+      "password": "qwert",
+      "id": 13
+    }
+  ],
+  "cart": [
+    {
+      "name": "I phone 14",
+      "price": "100000",
+      "color": "black",
+      "category": "mobile",
+      "description": "An Apple Product",
+      "image": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcSOO1JDPUNwcPiqzHYhaL_zpJA0Ymlr6mD9sSgTPad_JYdrk-o",
+      "quantity": 1,
+      "productId": "1",
+      "userId": null,
+      "id": 6
+    },
+    {
+      "name": "Samsung S23",
+      "price": "25000",
+      "color": "black",
+      "category": "mobile",
+      "description": "a samsung product",
+      "image": "https://rukminim2.flixcart.com/image/850/1000/xif0q/mobile/u/i/d/-original-imagzm8qbwwyyvhf.jpeg?q=90&crop=false",
+      "quantity": 1,
+      "productId": "ad8b",
+      "userId": null,
+      "id": 7
+    },
+    {
+      "name": "Nike shoes",
+      "price": "7999",
+      "color": "grey",
+      "category": "shoes",
+      "description": "running shoes for men",
+      "image": "https://static.nike.com/a/images/t_PDP_936_v1/f_auto,q_auto:eco/c78ddcb7-e0eb-4424-90ae-4227f68c5675/NIKE+CORTEZ.png",
+      "quantity": 1,
+      "productId": "be41",
+      "userId": null,
+      "id": 8
+    },
+    {
+      "name": "Sony Xm5",
+      "price": "30000",
+      "color": "white",
+      "category": "Headphones",
+      "description": "Sony noise cancelling Headphones",
+      "image": "https://www.jbhifi.com.au/cdn/shop/products/592551-Product-0-I-637878553977254838.jpg?v=1652248220",
+      "quantity": 1,
+      "userId": 13,
+      "productId": "e8b6",
+      "id": 12
+    },
+    {
+      "name": "HP laptop",
+      "price": "65000             ",
+      "color": "silver",
+      "category": "Laptop",
+      "description": "HP laptop for students",
+      "image": "https://images-cdn.ubuy.co.in/651c4a2c17002e2bb90fa2cd-hp-15-6-touchscreen-intel-core.jpg",
+      "quantity": 1,
+      "userId": 13,
+      "productId": "d7f6",
+      "id": 18
+    },
+    {
+      "name": "HP laptop",
+      "price": "65000             ",
+      "color": "silver",
+      "category": "Laptop",
+      "description": "HP laptop for students",
+      "image": "https://images-cdn.ubuy.co.in/651c4a2c17002e2bb90fa2cd-hp-15-6-touchscreen-intel-core.jpg",
+      "quantity": 1,
+      "userId": 13,
+      "productId": "d7f6",
+      "id": 19
+    },
+    {
+      "name": "HP laptop",
+      "price": "65000             ",
+      "color": "silver",
+      "category": "Laptop",
+      "description": "HP laptop for students",
+      "image": "https://images-cdn.ubuy.co.in/651c4a2c17002e2bb90fa2cd-hp-15-6-touchscreen-intel-core.jpg",
+      "quantity": 1,
+      "userId": 13,
+      "productId": "d7f6",
+      "id": 20
+    },
+    {
+      "name": "I phone 14",
+      "price": "100000",
+      "color": "black",
+      "category": "mobile",
+      "description": "An Apple Product",
+      "image": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcSOO1JDPUNwcPiqzHYhaL_zpJA0Ymlr6mD9sSgTPad_JYdrk-o",
+      "quantity": 1,
+      "userId": 4,
+      "productId": "1",
+      "id": 21
+    },
+    {
+      "name": "Samsung S23",
+      "price": "25000",
+      "color": "black",
+      "category": "mobile",
+      "description": "a samsung product",
+      "image": "https://rukminim2.flixcart.com/image/850/1000/xif0q/mobile/u/i/d/-original-imagzm8qbwwyyvhf.jpeg?q=90&crop=false",
+      "quantity": 1,
+      "userId": 4,
+      "productId": "ad8b",
+      "id": 22
+    }
+  ],
+  "orders": []
+}
