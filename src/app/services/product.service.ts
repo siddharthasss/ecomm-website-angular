@@ -1,4 +1,4 @@
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpParams } from '@angular/common/http';
 import { EventEmitter, Injectable } from '@angular/core';
 import { cart, order, product } from '../data-type';
 import { Observable } from 'rxjs';
@@ -33,7 +33,8 @@ export class ProductService {
     return this.http.get<product[]>('http://localhost:3000/products?_limit=8')
   }
   searchproducts(query:string){
-    return this.http.get<product[]>(`http://localhost:3000/products?q=${query}`)
+    const params = new HttpParams().set('q',query)
+    return this.http.get<product[]>(`http://localhost:3000/products`,{params})
   }
   localAddToCart(data:product){
     let cartData = [];
