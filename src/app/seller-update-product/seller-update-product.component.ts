@@ -23,7 +23,7 @@ export class SellerUpdateProductComponent implements OnInit {
     
   }
   submit(data:product){
-    console.warn(data);
+    console.warn('bac',data);
     if(this.productData){
       data.id = this.productData.id;
     }

@@ -14,15 +14,15 @@ export class CheckoutComponent implements OnInit {
   cartData: cart[]| undefined;
   orderMsg: string | undefined
   ngOnInit(): void {
-    this.product.currentCart().subscribe((result)=>{      
-      let  price = 0;
+    this.product.currentCart().subscribe((result:any)=>{           
+      let  price = result.carts[0].total;    
       this.cartData = result;
-      result.forEach((item)=>{
-        if(item.quantity){
-          price += (+item.price* +item.quantity); 
-        }
-      });
-      this.totalPrice = price-(price*0.1)+(price*0.05)+100;
+      // result.forEach((item)=>{
+      //   if(item.quantity){
+      //     price += (+item.price* +item.quantity); 
+      //   }
+      // });
+      this.totalPrice = price-Math.round(price*0.1)+Math.round(price*0.05)+100;
       console.warn(this.totalPrice);
     })
   }

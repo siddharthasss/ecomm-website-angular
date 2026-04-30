@@ -1,14 +1,15 @@
 <div class="row product-details" *ngIf="productData">
     <div class="col-sm-6">
-        <img class="product-image" src="{{productData.image}}" alt="">
+        <img class="product-image" src="{{productData.thumbnail}}" alt="">
     </div>
     <div class="col-sm-6">
         <div class="details">
-            <h1>{{productData.name}}</h1>
-            <h3>{{productData.price}}</h3>
+            <h1>{{productData.title}}</h1>
+            <h3>{{productData.price}} $</h3>
             <div>
-                color:
-                <h5 [style.backgroundColor]="productData.color" class="product-color" ></h5>
+                rating :                 
+                <h5><ngb-rating style="color: gold;" [(rate)]="productData.rating" [max]="5" [readonly]="true"></ngb-rating></h5>                
+                <!-- <h5 class="product-color" > {{productData.rating}}</h5> -->
             </div>
             <h6>category : {{productData.category}}</h6>
             <h6>description : {{productData.description}}</h6>

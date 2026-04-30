@@ -1,7 +1,9 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { ProductService } from '../services/product.service';
 import { cart, product } from '../data-type';
+import { BehaviorSubject } from 'rxjs';
+import { HeaderService } from '../header/header.service';
 
 @Component({
   selector: 'app-product-details',
@@ -14,7 +16,7 @@ export class ProductDetailsComponent implements OnInit{
   quantity:number =1;
   removeCart = false;
   cartData:product|undefined;
-  constructor(private activeRoute:ActivatedRoute, private product:ProductService) {}
+  constructor(private activeRoute:ActivatedRoute, private product:ProductService, private headerService: HeaderService) {}  
   ngOnInit(): void {
     let productId = this.activeRoute.snapshot.paramMap.get('productId');
     productId && this.product.getProduct(productId).subscribe((result)=>{
@@ -77,9 +79,11 @@ export class ProductDetailsComponent implements OnInit{
         }
         delete cartData.id;
         console.warn(cartData);
-        this.product.addToCart(cartData).subscribe((result)=>{
+        this.product.addToCart(cartData).subscribe((result:any)=>{
           if(result){
-            this.product.getCartList(userId);
+            console.warn('item stored in db',result);
+            //this.product.getCartList(userId); 
+            this.headerService.updatedCart.next(result);           
             this.removeCart = true;
           }
         });
@@ -96,11 +100,11 @@ export class ProductDetailsComponent implements OnInit{
 
       this.cartData && this.product.removeToCart(this.cartData.id).subscribe((result)=>{
         if(result){          
+          console.warn('item removed from db',result);
           let user = localStorage.getItem('user')
           let userId = user && JSON.parse(user).id;
           this.product.getCartList(userId);
-                   
-          
+                             
         }
       })
       this.removeCart = false;

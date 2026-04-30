@@ -9,17 +9,23 @@ export interface login{
 }
 export interface product{
     name:string,
+    title:string,
     price:number,
+    rating:number,
+    images:string[],
     category:string,
     color:string,
     description:string,
     image:string,
+    thumbnail:string,
     id: number,
     quantity: undefined|number
     productId: undefined|number
 }
 export interface cart{
     name:string,
+    title:string,
+    thumbnail:string,
     price:number,
     category:string,
     color:string,

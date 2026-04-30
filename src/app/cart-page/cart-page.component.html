@@ -1,13 +1,14 @@
 <div class="cart-page">
     <h1>Cart Page</h1>
+    <p class="message-p">{{productMessage}}</p>
     <div class="row">
         <div *ngFor="let cart of cartData" class="col-sm-8 details">
             <ul>
                 <li>
-                    <img src="{{cart.image}}" alt="">
+                    <img src="{{cart.thumbnail}}" alt="">
                 </li>
                 <li>
-                    <span>{{cart.name}}</span>
+                    <span>{{cart.title}}</span>
                 </li>
                 <li>
                     <span>{{cart.price}}</span>

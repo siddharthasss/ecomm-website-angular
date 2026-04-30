@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { ProductService } from '../services/product.service';
 import { product } from '../data-type';
+import { HeaderService } from './header.service';
 
 @Component({
   selector: 'app-header',
@@ -14,7 +15,7 @@ export class HeaderComponent implements OnInit{
   searchResults :undefined | product[];
   userName:string="";
   cartItems=0;
-  constructor(private route:Router,private product: ProductService){}
+  constructor(private route:Router,private product: ProductService, private headerService: HeaderService){}
   ngOnInit(): void {
     this.route.events.subscribe((val:any)=>{
       if(val.url){
@@ -45,10 +46,16 @@ export class HeaderComponent implements OnInit{
     if(cartData){
       this.cartItems = JSON.parse(cartData).length; 
     }
-    this.product.cartData.subscribe((items)=>{
-      this.cartItems = items.length;      
+    this.product.cartData.subscribe((items: any)=>{
+      console.warn('cart data in header',items.carts[0].products.length);
+      this.cartItems = items.carts[0].products.length;      
+    })
+    this.headerService.updatedCart.subscribe((items:any)=>{
+      console.warn('cart data in header1',items.products.length);
+      this.cartItems = items.products.length;      
     })
     
+        
   }
   logout(){
     localStorage.removeItem('seller');
@@ -62,12 +69,13 @@ export class HeaderComponent implements OnInit{
   searchProduct(query:KeyboardEvent){
     if(query){
       const element = query.target as HTMLInputElement;
-      this.product.searchproducts(element.value).subscribe((result)=>{
+      this.product.searchproducts(element.value).subscribe((result:any)=>{
+        console.warn('abc1',result);
         
-        if(result.length>5){
-          result.length=5;
+        if(result.products.length>5){
+          result.products.length=5;
         }
-        this.searchResults = result;
+        this.searchResults = result.products;
       })
 
     }

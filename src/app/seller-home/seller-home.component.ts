@@ -35,7 +35,7 @@ export class SellerHomeComponent implements OnInit{
   list(){
     this.product.productList().subscribe((result:any)=>{
       console.warn(result);
-      this.productList = result;
+      this.productList = result.products;
 
     })
   }
