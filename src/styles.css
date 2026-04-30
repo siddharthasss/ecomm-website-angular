@@ -1,7 +1,5 @@
 
-body{
-    font-family: sans-serif;
-}
+
 .container{
     margin-left: 5% ;
     margin-right: 5% ;
@@ -42,4 +40,36 @@ body{
 }
 .max-width{
     width: 100%;
+}
+:root {
+  --primary: #7c3aed;
+  --primary-dark: #5b21b6;
+  --bg: #f8f8fc;
+  --card-bg: #ffffff;
+  --text: #1f2937;
+  --muted: #6b7280;
+  --border: #e5e7eb;
+  --shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  --shadow-hover: 0 18px 40px rgba(124, 58, 237, 0.14);
+  --radius: 20px;
+}
+
+html, body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: Inter, Roboto, Arial, sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+.page-container {
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 0 24px;
 }

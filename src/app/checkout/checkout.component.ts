@@ -39,11 +39,11 @@ export class CheckoutComponent implements OnInit {
         userId,
         id:undefined
       }; 
-      this.cartData?.forEach((item)=>{
-        setTimeout(()=>{
-        item.id && this.product.deleteCartItems(item.id);
-      },600);
-      });
+      // this.cartData?.forEach((item)=>{
+      //   setTimeout(()=>{
+      //   item.id && this.product.deleteCartItems(item.id);
+      // },600);
+      // });
       this.product.orderNow(orderData).subscribe((result)=>{
         if(result){
           this.orderMsg="Your order has been placed successfully";

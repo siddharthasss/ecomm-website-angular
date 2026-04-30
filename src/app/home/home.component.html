@@ -9,27 +9,27 @@
 		</div>
 	</ng-template>
 </ngb-carousel>
-<div class="product-list-wrapper">
-<h1>Trendy Products</h1>
-<div class="row">
-	<div  *ngFor="let item of trendyProduts" class="col-sm-3">
-		<div class="product-item">
-			<a routerLink="/details/{{item.id}}">
-				<img src="{{item.thumbnail}}" alt="">
-			</a>
-			<div class="product-details">
-				<h6 class="name-head">{{item.title}}</h6>
-				<div class="product-price">
-					<div>{{item.price}} <span>$</span></div>
-				</div>
-				<div class="product-color">
-					<h6>Black</h6>
-				</div>
-			</div>
-			<div class="product-footer">
-				<a routerLink="/details/{{item.id}}">view Details</a>
-				<button class="link-button" (click)="addToCart(item.id)">Add to cart</button>
-			</div>
-		</div>
-	</div>
+<div class="product-list-wrapper page-container">
+  <h1>Trendy Products</h1>
+
+  <div class="row g-4">
+    <div *ngFor="let item of trendyProduts" class="col-12 col-sm-6 col-lg-3">
+      <div class="product-item">
+        <a routerLink="/details/{{item.id}}" class="product-image-link">
+          <img [src]="item.thumbnail" [alt]="item.title">
+        </a>
+
+        <div class="product-details">
+          <h6 class="name-head">{{ item.title }}</h6>
+          <div class="product-price">{{ item.price }} <span>$</span></div>
+          <div class="product-meta">{{ item.category }}</div>
+        </div>
+
+        <div class="product-footer">
+          <a routerLink="/details/{{item.id}}" class="details-btn">View Details</a>
+          <button class="cart-btn" (click)="addToCart(item.id)">Add to cart</button>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>

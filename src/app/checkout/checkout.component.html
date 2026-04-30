@@ -1,21 +1,39 @@
-<div class="checkout">
+<div class="checkout page-container">
+  <div class="checkout-header">
     <h1>Checkout</h1>
-    <p class="message-p">{{orderMsg}}</p>
-    <div class="row">
-        <div class="col-sm-7 shipping-address">
-            <h3>Add shipping address</h3>
-            <form #orderData="ngForm" class="common-form" (ngSubmit)="orderNow(orderData.value)">
-                <input class="form-input" type="text" ngModel name="email" placeholder="Enter User Email">
-                <input class="form-input" type="text" ngModel name="address" placeholder="Enter Your Address">
-                <input class="form-input" type="text" ngModel name="contact" placeholder="Enter Contact detail">
-                <button class="form-button">Order Now</button>
-            </form>
-        </div>
-        <div class="col-sm-5">
-            <h3>Total Amount: {{totalPrice }}</h3>
-            <h4>Payment Method : <b>Pay on Delivery</b></h4>
+    <p class="message-p">{{ orderMsg }}</p>
+  </div>
 
-        </div>
+  <div class="row g-4">
+    <div class="col-12 col-lg-7">
+      <div class="checkout-card">
+        <h3>Add shipping address</h3>
+
+        <form #orderData="ngForm" class="common-form checkout-form" (ngSubmit)="orderNow(orderData.value)">
+          <input class="form-input" type="text" ngModel name="email" placeholder="Enter your email">
+          <input class="form-input" type="text" ngModel name="address" placeholder="Enter your address">
+          <input class="form-input" type="text" ngModel name="contact" placeholder="Enter contact number">
+          <button class="form-button checkout-btn">Order Now</button>
+        </form>
+      </div>
     </div>
-    
+
+    <div class="col-12 col-lg-5">
+      <div class="checkout-summary">
+        <h3>Order Summary</h3>
+
+        <div class="summary-box">
+          <div class="summary-row">
+            <span>Total Amount</span>
+            <b>{{ totalPrice }}</b>
+          </div>
+
+          <div class="summary-row">
+            <span>Payment Method</span>
+            <b>Pay on Delivery</b>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>

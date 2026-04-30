@@ -1,29 +1,36 @@
-<div class="row product-details" *ngIf="productData">
-    <div class="col-sm-6">
-        <img class="product-image" src="{{productData.thumbnail}}" alt="">
+<div class="product-details page-container" *ngIf="productData">
+  <div class="row g-5 align-items-start">
+    <div class="col-12 col-lg-6">
+      <div class="image-card">
+        <img class="product-image" [src]="productData.thumbnail" [alt]="productData.title">
+      </div>
     </div>
-    <div class="col-sm-6">
-        <div class="details">
-            <h1>{{productData.title}}</h1>
-            <h3>{{productData.price}} $</h3>
-            <div>
-                rating :                 
-                <h5><ngb-rating style="color: gold;" [(rate)]="productData.rating" [max]="5" [readonly]="true"></ngb-rating></h5>                
-                <!-- <h5 class="product-color" > {{productData.rating}}</h5> -->
-            </div>
-            <h6>category : {{productData.category}}</h6>
-            <h6>description : {{productData.description}}</h6>
-            <button class="form-button" >Buy Now</button>
-            <button *ngIf="!removeCart" class="form-button" (click)="addToCart()">Add to cart</button>
-            <button *ngIf="removeCart" class="form-button" (click)="removeToCart(productData.id)">Remove to cart</button>
-            <div class="quantity-group">
-                <button (click)="handleQuantity('min')" >-</button>
-                <input type="text" value="{{productQuantity}}">
-                <button (click)="handleQuantity('plus')">+</button>
 
+    <div class="col-12 col-lg-6">
+      <div class="details-card">
+        <h1>{{ productData.title }}</h1>
+        <div class="price">{{ productData.price }} $</div>
 
-            </div>
+        <div class="rating-row">
+          <span>Rating:</span>
+          <ngb-rating style="color: gold;" [(rate)]="productData.rating" [max]="5" [readonly]="true"></ngb-rating>
         </div>
-    </div>
 
+        <p class="detail-text"><b>Category:</b> {{ productData.category }}</p>
+        <p class="detail-text"><b>Description:</b> {{ productData.description }}</p>
+
+        <div class="action-row">
+          <button class="form-button primary">Buy Now</button>
+          <button *ngIf="!removeCart" class="form-button" (click)="addToCart()">Add to cart</button>
+          <button *ngIf="removeCart" class="form-button secondary" (click)="removeToCart(productData.id)">Remove from cart</button>
+        </div>
+
+        <div class="quantity-group">
+          <button (click)="handleQuantity('min')">−</button>
+          <input type="text" [value]="productQuantity" readonly>
+          <button (click)="handleQuantity('plus')">+</button>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
